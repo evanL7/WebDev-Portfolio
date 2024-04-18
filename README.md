@@ -12,7 +12,7 @@ This repository contains my learning journey in HTML and CSS. It includes variou
 
 ## Projects
 
-- [Project 1](link-to-project-1): Description of project 1.
+- [Personal Site](https://dulcet-mousse-84a6f6.netlify.app/): Link to my personal site.
 - [Project 2](link-to-project-2): Description of project 2.
 - [Project 3](link-to-project-3): Description of project 3.
 
