@@ -26,8 +26,16 @@
 }
 
 .btn {
+    background: #dfe1e5;
+    border: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    border-radius: 10px;
 }
