@@ -1,0 +1,53 @@
+.heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.soccer-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+.email-input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #333;
+    margin-top: 1rem;
+}
