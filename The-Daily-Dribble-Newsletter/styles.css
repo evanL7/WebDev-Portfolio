@@ -1,43 +1,50 @@
 .heading {
+    display: flex;
+    justify-content: center;
     font-size: 1.5rem;
     font-weight: 700;
     margin-top: 25px;
     margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
     text-transform: uppercase;
 }
 
 .soccer-img {
     width: 50%;
-    height: 50%;
-    object-fit: cover;
+    border: 5px solid black;
     border-radius: 0.5rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 1rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .text {
     font-size: 1rem;
     margin-bottom: 1rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
-    padding: 0.5rem 1rem;
     background-color: #f1f1f1;
     color: #333;
     border-radius: 0.5rem;
-    margin-top: 5rem;
+    display: block;
+    margin-top: 1rem;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .btn:hover {
@@ -50,4 +57,9 @@
     border-radius: 0.5rem;
     border: 1px solid #333;
     margin-top: 1rem;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
 }
