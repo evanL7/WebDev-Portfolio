@@ -5,8 +5,8 @@ body {
 .heading {
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 900;
     margin-top: 25px;
     margin-bottom: 1rem;
     text-transform: uppercase;
