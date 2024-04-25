@@ -13,7 +13,7 @@ This repository contains my learning journey in HTML and CSS. It includes variou
 ## Projects
 
 - [Personal Site](https://dulcet-mousse-84a6f6.netlify.app/): Link to my personal site.
-- [Project 2](link-to-project-2): Description of project 2.
+- [Business Card](https://business-card-evanl.netlify.app/): Link to my business card.
 - [Project 3](link-to-project-3): Description of project 3.
 
 ## Exercises
