@@ -1,0 +1,7 @@
+.page {
+    display: flex;
+}
+
+.book-cover {
+    width: 400px;
+}
