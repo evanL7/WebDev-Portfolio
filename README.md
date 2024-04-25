@@ -18,7 +18,7 @@ This repository contains my learning journey in HTML and CSS. It includes variou
 
 ## Exercises
 
-- [Exercise 1](link-to-exercise-1): Description of exercise 1.
+- [The-Daily-Dribble-Newsletter](https://the-daily-dribble-newsletter-evanl.netlify.app/): A newsletter layout for soccer enthusiasts.
 - [Exercise 2](link-to-exercise-2): Description of exercise 2.
 - [Exercise 3](link-to-exercise-3): Description of exercise 3.
 
