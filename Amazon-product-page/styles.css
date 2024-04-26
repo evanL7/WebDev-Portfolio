@@ -1,7 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #007185;
+}
+
+.navigation {
+    margin: 20px 15px;
+}
+
+.breadcrumb {
+    color: #565959;
+}
+
+.product-text-info {
+    margin: 0 15px;
+}
+
 .page {
     display: flex;
 }
 
 .book-cover {
+    margin: 15px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     width: 400px;
+}
+
+.rating-image {
+    width: 100px;
 }
