@@ -1,6 +1,6 @@
 # HTML and CSS Learning
 
-This repository contains my learning journey in HTML and CSS. It includes various projects and exercises that I have completed to improve my skills in web development.
+Welcome to my HTML and CSS learning journey! This repository showcases my progress in web development through various projects and exercises.
 
 ## Projects
 
