@@ -6,6 +6,7 @@ Welcome to my HTML and CSS learning journey! This repository showcases my progre
 
 - [Personal Site](https://dulcet-mousse-84a6f6.netlify.app/): Explore my personal website and get to know me better.
 - [Business Card](https://business-card-evanl.netlify.app/): Check out my professional business card design.
+- [Birthday Gift Site](https://birthday-gift-site-evanl.netlify.app/): Celebrate Jerry Seinfeld's birthday with a special gift site!
 
 ## Exercises
 
