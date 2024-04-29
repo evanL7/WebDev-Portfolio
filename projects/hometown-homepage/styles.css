@@ -35,6 +35,23 @@ body {
     height: 480px;
 }
 
+.activities {
+    background: #F1FAEE;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+}
+
+.activity {
+    width: 200px;
+}
+
+.activity-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
 
 .cabin-regular {
   font-family: "Cabin", sans-serif;
