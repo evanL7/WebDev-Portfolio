@@ -1,6 +1,6 @@
-# HTML and CSS Learning
+# HTML and CSS Portfolio
 
-Welcome to my HTML and CSS learning journey! This repository showcases my progress in web development through various projects and exercises.
+Welcome to my HTML and CSS portfolio! This repository showcases my progress in web development through various projects and exercises.
 
 ## Projects
 
