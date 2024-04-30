@@ -2,10 +2,6 @@ body {
     margin: 0;
 }
 
-h2 {
-    text-align: center;
-}
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -28,7 +24,6 @@ h2 {
     color: #FFFFFF;
     margin-top: 0;
     padding: 15px 40px;
-    width: 400px;
     font-size: 20px;
 }
 
@@ -43,11 +38,22 @@ h2 {
     background: #F1FAEE;
     display: flex;
     justify-content: space-evenly;
-    padding: 60px;
+    padding: 50px 0;
+    height: 480px;
 }
 
 .activity {
-    width: 200px;
+    width: 220px;
+}
+
+.activity-title {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.activity-description {
+    font-size: 18px;
+    margin: 8px 0 0 0;
 }
 
 .activity-img {
@@ -55,6 +61,41 @@ h2 {
     width: 200px;
     height: 200px;
     object-fit: cover;
+}
+
+.guide {
+    background: #A8DADC;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.guide-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.guide-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.guide-button {
+    color: #1D3557;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #F1FAEE;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.guide-button:hover {
+    text-decoration: underline;
+    background-color: #457B9D;
+    color: #FFFFFF;
 }
 
 .cabin-regular {
