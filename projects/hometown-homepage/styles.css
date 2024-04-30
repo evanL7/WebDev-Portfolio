@@ -29,9 +29,10 @@ body {
 
 #img-vancouver {
     background-image: url('images/vancouver.webp');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 480px;
+    height: 100vh;
 }
 
 .activities {
