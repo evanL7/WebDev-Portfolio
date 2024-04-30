@@ -1,6 +1,6 @@
-# HTML and CSS Portfolio
+# Web Development Portfolio
 
-Welcome to my HTML and CSS portfolio! This repository showcases my progress in web development through various projects and exercises.
+Welcome to my web development portfolio! This repository showcases my progress in web development through various projects and exercises.
 
 ## Projects
 
