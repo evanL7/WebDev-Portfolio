@@ -13,7 +13,7 @@ body {
     align-items: center;
     background: rgba(255, 255, 240, 0.5);
     backdrop-filter: blur(5px);
-    margin: auto;
+    margin: 10% auto;
     padding: 0px;
     width: 350px;
     border-radius: 10px;
@@ -39,6 +39,7 @@ button {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #increment-btn {
