@@ -46,6 +46,7 @@ button:hover {
     padding: 25px 0 4px 0;
 }
 
+/* Custom font source: https://www.fontspace.com/cursed-timer-ulil-font-f29411 */
 @font-face {
     font-family: CursedTimer;
     src: url(fonts/CursedTimerUlil-Aznm.ttf);
