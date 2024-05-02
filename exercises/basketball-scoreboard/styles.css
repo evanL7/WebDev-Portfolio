@@ -12,6 +12,12 @@ button {
     padding: 10px 10px 6px 10px;
 }
 
+button:hover {
+    background-color: #D1D5DB;
+    color: #1F2937;
+    cursor: pointer;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -37,7 +43,7 @@ button {
     font-family: CursedTimer, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100px;
     margin: 0 0 20px 0;
-    padding: 25px 25px 0 25px;
+    padding: 25px 0 4px 0;
 }
 
 @font-face {
