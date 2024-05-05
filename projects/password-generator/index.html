@@ -11,7 +11,15 @@
     <body>
         <h1>Generate a <span class="highlight">random password</span></h1>
         <div class="pw container">
-            <div id="pw-result"></div>
+            <span id="pw-result"></span>
+            <div class="pw-buttons">
+                <button id="regenerate-emoji-btn">
+                    <img id="img-refresh" src="images/refresh.svg" alt="refresh">
+                </button>
+                <button id="copy-emoji-btn">
+                    <img id="img-clipboard" src="images/copy.svg" alt="copy to clipboard">
+                </button>
+            </div>
         </div>
         <div>
             <div class="container">
@@ -37,8 +45,8 @@
                 </div>
             </div>
         </div>
-        <button id="pw-copy-btn">Copy Password</button>
-        <button id="pw-generate-btn">Regenerate Password</button>
+        <button class="btn-styling" id="pw-copy-btn">Copy Password</button>
+        <button class="btn-styling" id="pw-generate-btn">Regenerate Password</button>
         <script src="index.js"></script>
     </body>
 </html>

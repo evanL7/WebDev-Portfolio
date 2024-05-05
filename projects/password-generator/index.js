@@ -12,9 +12,11 @@ let lengthRangeEl = document.getElementById("length-range");
 
 lengthNumEl.addEventListener("input", function() {
     lengthRangeEl.value = lengthNumEl.value;
+    updatePassword();
 });
 lengthRangeEl.addEventListener("input", function() {
     lengthNumEl.value = lengthRangeEl.value;
+    updatePassword();
 });
 
 pwCopyBtnEl.addEventListener("click", copyToClipboard);

@@ -31,6 +31,9 @@ h1 {
     font-weight: 500;
     font-family: "Source Sans 3", sans-serif;
     margin: 0 0 0 -70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .slider {
@@ -45,7 +48,7 @@ h1 {
     width: 430px;    
 }
 
-button {
+.btn-styling {
     background-color: #d22;
     border: none;
     color: #fff;
@@ -78,4 +81,28 @@ button {
 
 #length-range {
     width: 125px;
+}
+
+.pw-buttons {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    margin-left: 430px;
+}
+
+#regenerate-emoji-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 36px;
+    color: grey;
+}
+
+#copy-emoji-btn {
+    background-color: transparent;
+    border: none;
+}
+
+#img-clipboard {
+    color: grey;
+    height: 40px;
 }
