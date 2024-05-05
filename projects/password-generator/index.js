@@ -2,7 +2,6 @@ let uppercaseAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 let lowercaseAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 let digits = '0123456789'.split('');
 let symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'.split('');
-let maxVisibleLength = 45;
 
 let pwResultEl = document.getElementById("pw-result");
 let pwCopyBtnEl = document.getElementById("pw-copy-btn");

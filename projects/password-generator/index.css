@@ -8,6 +8,10 @@ body {
     align-items: center;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 h1 {
     padding: 0 220px 0 0;
     text-align: center;
@@ -87,7 +91,7 @@ h1 {
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    margin-left: 430px;
+    margin-left: 420px;
 }
 
 #regenerate-emoji-btn {
@@ -105,4 +109,11 @@ h1 {
 #img-clipboard {
     color: grey;
     height: 40px;
+}
+
+.tooltip {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 4px 8px;
 }
