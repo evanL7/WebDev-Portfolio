@@ -9,27 +9,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Generate a random password</h1>
-        <div class="pw-result">
+        <h1>Generate a<br><span class="highlight">random password</span></h1>
+        <div class="pw-result container">
             hi
         </div>
         <div>
             <div class="container">
                 <h2>Customize your password</h2>
-                <label for="length">Password Length:</label>
-                <div class="input-length">
-                    <input type="number" id="length" min="1" max="50" value="12">
-                    <input type="range" min="1" max="50" class="slider">
-                </div>
-                <div class="selection">
-                    <input type="checkbox" id="uppercase">
-                    <label for="uppercase">Uppercase</label><br>
-                    <input type="checkbox" id="lowercase">
-                    <label for="lowercase">Lowercase</label><br>
-                    <input type="checkbox" id="numbers">
-                    <label for="numbers">Numbers</label><br>
-                    <input type="checkbox" id="symbols">
-                    <label for="symbols">Symbols</label>
+                <div id="options">
+                    <div>
+                        <label for="length">Password Length:</label>
+                        <div class="input-length">
+                            <input type="number" id="length" min="1" max="50" value="12">
+                            <input type="range" min="1" max="50" class="slider">
+                        </div>
+                    </div>
+                    <div class="selection">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Uppercase</label><br>
+                        <input type="checkbox" id="lowercase">
+                        <label for="lowercase">Lowercase</label><br>
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Numbers</label><br>
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Symbols</label>
+                    </div>
                 </div>
             </div>
         </div>
