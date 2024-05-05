@@ -5,7 +5,10 @@ let symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'.split('');
 
 let pwResultEl = document.getElementById("pw-result");
 let pwCopyBtnEl = document.getElementById("pw-copy-btn");
-let pwGenerateBtnEl = document.getElementById("pw-generate-btn");
+
+let copyEmojiBtnEl = document.getElementById("copy-emoji-btn");
+let refreshEmojiBtnEl = document.getElementById("refresh-emoji-btn");
+
 let lengthNumEl = document.getElementById("length-num");
 let lengthRangeEl = document.getElementById("length-range");
 
@@ -18,8 +21,9 @@ lengthRangeEl.addEventListener("input", function() {
     updatePassword();
 });
 
+refreshEmojiBtnEl.addEventListener("click", updatePassword);
+copyEmojiBtnEl.addEventListener("click", copyToClipboard);
 pwCopyBtnEl.addEventListener("click", copyToClipboard);
-pwGenerateBtnEl.addEventListener("click", updatePassword);
 
 window.onload = updatePassword;
 
@@ -44,6 +48,10 @@ function generatePassword() {
     if (document.getElementById("symbols").checked) {
         characters = characters.concat(symbols);
     }
+    if (characters.length === 0) {
+        return "";
+    }
+
     shuffle(characters);
     for (let i = 0; i < length; i++) {
         let randomIndex = Math.floor(Math.random() * characters.length);
@@ -69,5 +77,5 @@ function copyToClipboard() {
     window.getSelection().addRange(range); // Select the text
     document.execCommand("copy"); // Copy the selected text
     window.getSelection().removeAllRanges(); // Clear the selection
-    alert("Password copied to clipboard: " + copyText.textContent);
+    alert("Password copied to clipboard.");
 }

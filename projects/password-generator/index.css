@@ -13,6 +13,7 @@ button:hover {
 }
 
 h1 {
+    margin: 50px 0 10px 0;
     padding: 0 220px 0 0;
     text-align: center;
 }
@@ -91,10 +92,10 @@ h1 {
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    margin-left: 420px;
+    margin-left: 425px;
 }
 
-#regenerate-emoji-btn {
+#refresh-emoji-btn {
     background-color: transparent;
     border: none;
     font-size: 36px;
