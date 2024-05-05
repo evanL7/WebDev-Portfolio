@@ -71,4 +71,11 @@ button {
 #length-num {
     border: 1px solid grey;
     border-radius: 4px;
+    padding: 6px;
+    text-align: center;
+    width: 50px;
+}
+
+#length-range {
+    width: 125px;
 }
