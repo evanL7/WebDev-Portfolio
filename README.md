@@ -9,7 +9,7 @@ Welcome to my web development portfolio! This repository showcases my progress i
 - [Birthday Gift Site](https://birthday-gift-site-evanl.netlify.app/): Celebrate Jerry Seinfeld's birthday with a special gift site!
 - [Hometown Homepage](https://hometown-homepage-evanl.netlify.app/): Take a virtual tour of my hometown through my personalized homepage!
 - [Game Booth Counter](https://game-booth-counter-evanl.netlify.app/): Experience a game booth counter that keeps track of the number of people visiting your booth!
-- [Password Generator](https://password-generator-evanl.netlify.app/) (in progress): Explore a convenient password generator tool to create strong and unique passwords for your online accounts.
+- [Password Generator](https://password-generator-evanl.netlify.app/): Explore a convenient password generator tool to create strong and unique passwords for your online accounts.
 
 ## Exercises
 
