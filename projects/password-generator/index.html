@@ -11,7 +11,7 @@
     <body>
         <h1>Generate a <span class="highlight">random password</span></h1>
         <div class="pw container">
-            <div id="pw-result">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrs</div>
+            <div id="pw-result"></div>
         </div>
         <div>
             <div class="container">
@@ -20,25 +20,25 @@
                     <div>
                         <label for="length">Password Length:</label>
                         <div class="input-length">
-                            <input type="number" id="length" min="1" max="50" value="12">
-                            <input type="range" min="1" max="50" class="slider">
+                            <input type="number" id="length-num" min="1" max="50" value="12">
+                            <input type="range" id="length-range" min="1" max="50" value="12" class="slider">
                         </div>
                     </div>
                     <div class="selection">
-                        <input type="checkbox" id="uppercase">
+                        <input type="checkbox" id="uppercase" checked>
                         <label for="uppercase">Uppercase</label><br>
-                        <input type="checkbox" id="lowercase">
+                        <input type="checkbox" id="lowercase" checked>
                         <label for="lowercase">Lowercase</label><br>
-                        <input type="checkbox" id="numbers">
+                        <input type="checkbox" id="digits" checked>
                         <label for="numbers">Numbers</label><br>
-                        <input type="checkbox" id="symbols">
+                        <input type="checkbox" id="symbols" checked>
                         <label for="symbols">Symbols</label>
                     </div>
                 </div>
             </div>
         </div>
-        <button id="pw-copy">Copy Password</button>
-        <button id="pw-generate">Regenerate Password</button>
+        <button id="pw-copy-btn">Copy Password</button>
+        <button id="pw-generate-btn">Regenerate Password</button>
         <script src="index.js"></script>
     </body>
 </html>

@@ -24,18 +24,17 @@ h1 {
     padding: 5px 100px;
     display: flex;
     align-items: center;
-    overflow-wrap: break-word;
 }
 
 #pw-result {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
     font-family: "Source Sans 3", sans-serif;
     margin: 0 0 0 -70px;
 }
 
 .slider {
-    
+    accent-color: #d22;
 }
 
 .container {
@@ -59,7 +58,7 @@ button {
     text-align: center;
 }
 
-#pw-copy {
+#pw-copy-btn {
     margin: 10px 0;
 }
 
@@ -67,4 +66,9 @@ button {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+}
+
+#length-num {
+    border: 1px solid grey;
+    border-radius: 4px;
 }
