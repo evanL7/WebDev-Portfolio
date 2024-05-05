@@ -1,0 +1,42 @@
+body {
+    background-color: #CAEDF7;
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pw-result {
+    background-color: #fff;
+    height: 75px;
+    margin: 10px;
+    padding: 5px 100px;
+}
+
+.slider {
+    
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    padding: 5px 100px;
+}
+
+#pw-copy {
+    background-color: #d22;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    font-size: 18px;
+    margin: 32px auto;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: 900;
+    font-family: "Source Sans 3", sans-serif;
+    text-align: center;
+}

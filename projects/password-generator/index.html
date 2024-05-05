@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Generate a random password</h1>
+        <div class="pw-result">
+            hi
+        </div>
+        <div>
+            <div class="container">
+                <h2>Customize your password</h2>
+                <label for="length">Password Length:</label>
+                <div class="input-length">
+                    <input type="number" id="length" min="1" max="50" value="12">
+                    <input type="range" min="1" max="50" class="slider">
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Uppercase</label><br>
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Lowercase</label><br>
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Numbers</label><br>
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Symbols</label>
+                </div>
+            </div>
+        </div>
+        <button id="pw-copy">Copy Password</button>
+        <script src="index.js"></script>
+    </body>
+</html>
