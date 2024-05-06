@@ -1,16 +1,16 @@
-let uppercaseAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-let lowercaseAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-let digits = '0123456789'.split('');
-let symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'.split('');
+const uppercaseAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const lowercaseAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+const digits = '0123456789'.split('');
+const symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'.split('');
 
-let pwResultEl = document.getElementById("pw-result");
-let pwCopyBtnEl = document.getElementById("pw-copy-btn");
+const pwResultEl = document.getElementById("pw-result");
+const pwCopyBtnEl = document.getElementById("pw-copy-btn");
 
-let copyEmojiBtnEl = document.getElementById("copy-emoji-btn");
-let refreshEmojiBtnEl = document.getElementById("refresh-emoji-btn");
+const copyEmojiBtnEl = document.getElementById("copy-emoji-btn");
+const refreshEmojiBtnEl = document.getElementById("refresh-emoji-btn");
 
-let lengthNumEl = document.getElementById("length-num");
-let lengthRangeEl = document.getElementById("length-range");
+const lengthNumEl = document.getElementById("length-num");
+const lengthRangeEl = document.getElementById("length-range");
 
 lengthNumEl.addEventListener("input", function() {
     lengthRangeEl.value = lengthNumEl.value;
@@ -32,7 +32,7 @@ function updatePassword() {
 }
 
 function generatePassword() {
-    let length = lengthNumEl.value;
+    const length = lengthNumEl.value;
     let password = '';
     let characters = [];
 
@@ -53,20 +53,12 @@ function generatePassword() {
     }
 
     shuffle(characters);
+
     for (let i = 0; i < length; i++) {
         let randomIndex = Math.floor(Math.random() * characters.length);
         password += characters[randomIndex];
     }
     return password;
-}
-
-// Fisher-Yates shuffle algorithm
-function shuffle(characters) {
-    // Shuffle the characters array
-    for (let i = characters.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [characters[i], characters[j]] = [characters[j], characters[i]];
-    }
 }
 
 function copyToClipboard() {
@@ -78,4 +70,13 @@ function copyToClipboard() {
     document.execCommand("copy"); // Copy the selected text
     window.getSelection().removeAllRanges(); // Clear the selection
     alert("Password copied to clipboard.");
+}
+
+// Fisher-Yates shuffle algorithm
+function shuffle(characters) {
+    // Shuffle the characters array
+    for (let i = characters.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [characters[i], characters[j]] = [characters[j], characters[i]];
+    }
 }
