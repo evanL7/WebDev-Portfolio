@@ -92,19 +92,22 @@ h1 {
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    margin-left: 425px;
 }
 
 #refresh-emoji-btn {
     background-color: transparent;
     border: none;
     font-size: 36px;
+    position: fixed;
     color: grey;
+    margin: -20px -520px 0 0;
 }
 
 #copy-emoji-btn {
     background-color: transparent;
     border: none;
+    position: fixed;
+    margin: -20px -470px 0 0;
 }
 
 #img-clipboard {
