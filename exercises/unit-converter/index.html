@@ -3,17 +3,21 @@
     <head>
         <title>Unit Converter</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <h1>Metric/Imperial unit conversion</h1>
+        <div class="container">
+            <h1>Metric/Imperial <span class="highlight">unit conversion</span></h1>
             <h2 id="entered-amount">0</h2>
             <div>
                 <input id="user-input" type="text" placeholder="Enter amount">
                 <button id="update-btn">Update</button>
             </div>
 
-            <h3>Length (Meter/Feet)</h3>
+            <h3>Length (Meters/Feet)</h3>
             <p><span id="meter-to-feet">0 meters = 0.000 feet</span> | <span id="feet-to-meter">0 feet = 0.000 meters</span></p>
 
             <h3>Volume (Liters/Gallons)</h3>

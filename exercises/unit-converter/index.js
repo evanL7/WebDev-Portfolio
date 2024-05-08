@@ -43,6 +43,6 @@ function updateText() {
 }
 
 function generateConversionSentence(srcUnit, destUnit, srcValue, destValue) {
-    return `${srcValue} ${srcUnit} = ${destValue.toFixed(2)} ${destUnit}`;
+    return `${srcValue} ${srcUnit} = ${destValue.toFixed(3)} ${destUnit}`;
 }
 
