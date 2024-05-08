@@ -17,4 +17,4 @@ Welcome to my web development portfolio! This repository showcases my progress i
 - [Amazon Product Page](https://amazon-product-page-evanl.netlify.app/): Discover a sample Amazon product page design.
 - [Web Agency Hero](https://web-agency-hero-evanl.netlify.app/): Get inspired by a sleek and modern web page layout for a web agency.
 - [Basketball Scoreboard](https://basketball-scoreboard-evanl.netlify.app): See a basketball scoreboard in action!
-- [Unit Converter](https://unit-converter-evanl.netlify.app/) (in progress): Convert units!
+- [Unit Converter](https://unit-converter-evanl.netlify.app/): Convert units!
