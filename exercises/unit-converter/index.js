@@ -26,7 +26,7 @@ userInput.addEventListener("keypress", function(event) {
 });
 updateBtn.addEventListener("click", function () {
     userInputValue = Number(userInput.value);
-    if (userInputValue === NaN) {
+    if (!isNaN(userInputValue)) {
         enteredAmount.textContent = userInputValue;
         userInput.value = "";
         updateText();
