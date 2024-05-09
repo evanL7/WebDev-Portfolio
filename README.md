@@ -10,6 +10,7 @@ Welcome to my web development portfolio! This repository showcases my progress i
 - [Hometown Homepage](https://hometown-homepage-evanl.netlify.app/): Take a virtual tour of my hometown through my personalized homepage!
 - [Game Booth Counter](https://game-booth-counter-evanl.netlify.app/): Experience a game booth counter that keeps track of the number of people visiting your booth!
 - [Password Generator](https://password-generator-evanl.netlify.app/): Explore a convenient password generator tool to create strong and unique passwords for your online accounts.
+- [Add to Cart](https://add-to-cart-evanl.netlify.app/): Keep a shopping list on hand and easily add items to your cart!
 
 ## Exercises
 
