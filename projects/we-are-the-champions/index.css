@@ -21,6 +21,11 @@ input, button {
     max-width: 320px;
 }
 
+p {
+    margin: 0;
+    color: #9FADBD;
+}
+
 h1 {
     color: whitesmoke;
     font-size: 26px;
@@ -56,6 +61,10 @@ input, textarea {
     height: 30px;
 }
 
+#publish-btn:hover {
+    background-color: #519ec7;
+}
+
 #endorsements-list {
     list-style-type: none;
     padding: 0;
@@ -84,4 +93,15 @@ input, textarea {
 .endorsement-message {
     color: #9FADBD;
     padding: 4px;
+}
+
+.likes-and-dislikes {
+    color: #9FADBD;
+    margin-top: 12px;
+    text-align: right;
+}
+
+#like-btn, #dislike-btn {
+    background: transparent;
+    border: none;
 }
