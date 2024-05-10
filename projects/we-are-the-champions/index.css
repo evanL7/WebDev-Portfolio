@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0B1A22;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#freddie {
+    margin: 30px auto 10px;
+    width: 150px;
+}
+
+input, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 26px;
+}
+
+h2 {
+    color: #728AA1;
+    text-align: center;
+}
+
+input, textarea {
+    background-color: #151F2E;
+    border: none;
+    border-radius: 5px;
+    color: #9FADBD;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+#endorsement-message {
+    font-family: 'Montserrat', sans-serif;
+    height: 120px;
+}
+
+#publish-btn {
+    background-color: #3DB4F2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+}
+
+#endorsements-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.endorsement {
+    background: #151F2E;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.endorsement-title {
+    color: whitesmoke;
+    font-weight: 600;
+    text-align: center;
+    margin: 4px 0 8px;
+}
+
+.sender {
+    color: #519ec7;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.endorsement-message {
+    color: #9FADBD;
+    padding: 4px;
+}

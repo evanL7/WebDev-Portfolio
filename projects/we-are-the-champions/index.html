@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>We Are The Champions</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <img src="images/freddie.png" id="freddie">
+            <h1>We Are the Champions</h1>
+            <input type="text" placeholder="Title" id="endorsement-title">
+            <textarea id="endorsement-message" onfocus="this.value=''">Write your endorsement here</textarea>
+            <input type="text" placeholder="From" id="sender">
+            <button id="publish-btn">Publish</button>
+            <h2>Endorsements</h2>
+            <ul id="endorsements-list">
+            </ul>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

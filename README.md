@@ -11,6 +11,7 @@ Welcome to my web development portfolio! This repository showcases my progress i
 - [Game Booth Counter](https://game-booth-counter-evanl.netlify.app/): Experience a game booth counter that keeps track of the number of people visiting your booth!
 - [Password Generator](https://password-generator-evanl.netlify.app/): Explore a convenient password generator tool to create strong and unique passwords for your online accounts.
 - [Add to Cart](https://add-to-cart-evanl.netlify.app/): Keep a shopping list on hand and easily add items to your cart!
+- [We Are the Champions](https://we-are-the-champions-evanl.netlify.app/) (in progress): Share your endorsements and celebrate your achievements with the world!
 
 ## Exercises
 
