@@ -47,6 +47,10 @@ input, textarea {
     padding: 8px;
 }
 
+textarea {
+    resize: vertical;
+}
+
 #endorsement-message {
     font-family: 'Montserrat', sans-serif;
     height: 120px;
