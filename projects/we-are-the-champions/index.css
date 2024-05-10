@@ -60,6 +60,7 @@ input, textarea {
     font-size: 16px;
     font-weight: bold;
     height: 30px;
+    margin-top: 6px;
 }
 
 #publish-btn:hover {
@@ -75,7 +76,7 @@ input, textarea {
 .endorsement {
     background: #151F2E;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 16px 0;
     padding: 10px;
 }
 

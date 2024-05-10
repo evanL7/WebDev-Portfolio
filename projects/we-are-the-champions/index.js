@@ -29,6 +29,7 @@ publishBtn.addEventListener("click", function () {
     }    
 });
 
+// Reload endorsements list when new data is added
 onValue(endorsementsListInDB, function (snapshot) {
     if (snapshot.exists()) {
         const endorsementsList = Object.entries(snapshot.val());
@@ -45,19 +46,21 @@ onValue(endorsementsListInDB, function (snapshot) {
 
 function appendToEndorsementsList(endorsement) {
     const endorsementID = endorsement[0];
+    const endorsementData = endorsement[1];
+
     const endorsementEl = document.createElement("li");
     endorsementEl.classList.add("endorsement");
     
     endorsementEl.innerHTML = `
-    <div class="endorsement-title">${endorsement[1].title}</div>
-    <div class="sender">From: ${endorsement[1].sender}</div>
-    <div class="endorsement-message">${endorsement[1].message}</div>
-    <div class="likes-and-dislikes">
-        <button class="like-btn"><img src="images/like.svg" alt="like button"></button>
-        ${endorsement[1].likes}
-        <button class="dislike-btn"><img src="images/dislike.svg" alt="dislike button"></button>
-        ${endorsement[1].dislikes}
-    </div>
+        <div class="endorsement-title">${endorsementData.title}</div>
+        <div class="sender">From: ${endorsementData.sender}</div>
+        <div class="endorsement-message">${endorsementData.message}</div>
+        <div class="likes-and-dislikes">
+            <button class="like-btn"><img src="images/like.svg" alt="like button"></button>
+            ${endorsementData.likes}
+            <button class="dislike-btn"><img src="images/dislike.svg" alt="dislike button"></button>
+            ${endorsementData.dislikes}
+        </div>
     `;
 
     const likeBtn = endorsementEl.querySelector(".like-btn");
@@ -66,13 +69,13 @@ function appendToEndorsementsList(endorsement) {
     likeBtn.addEventListener("click", function () {
         const exactLocationOfEndorsement = ref(database, `endorsementsList/${endorsementID}`);
         update(exactLocationOfEndorsement, {
-            likes: endorsement[1].likes + 1
+            likes: endorsementData.likes + 1
         });
     });
     dislikeBtn.addEventListener("click", function () {
         const exactLocationOfEndorsement = ref(database, `endorsementsList/${endorsementID}`);
         update(exactLocationOfEndorsement, {
-            dislikes: endorsement[1].dislikes + 1
+            dislikes: endorsementData.dislikes + 1
         });
     });
 
@@ -92,7 +95,7 @@ function pushObject(title, message, sender) {
         sender: sender,
         likes: 0,
         dislikes: 0
-    }
+    };
 }
 
 function clearEndorsementsList() {
