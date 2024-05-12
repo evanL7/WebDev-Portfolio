@@ -4,6 +4,8 @@ Welcome to my web development portfolio! This repository showcases my progress i
 
 ## Projects
 
+### General Projects
+
 - [Personal Site](https://dulcet-mousse-84a6f6.netlify.app/): Explore my personal website and get to know me better.
 - [Business Card](https://business-card-evanl.netlify.app/): Check out my professional business card design.
 - [Birthday Gift Site](https://birthday-gift-site-evanl.netlify.app/): Celebrate Jerry Seinfeld's birthday with a special gift site!
@@ -13,10 +15,20 @@ Welcome to my web development portfolio! This repository showcases my progress i
 - [Add to Cart](https://add-to-cart-evanl.netlify.app/): Keep a shopping list on hand and easily add items to your cart!
 - [We Are the Champions](https://we-are-the-champions-evanl.netlify.app/): Share your endorsements and celebrate your achievements with the world!
 
+### React Projects
+
+- 
+
 ## Exercises
+
+### General Exercises
 
 - [The Daily Dribble Newsletter](https://the-daily-dribble-newsletter-evanl.netlify.app/): Experience a captivating newsletter layout for soccer enthusiasts.
 - [Amazon Product Page](https://amazon-product-page-evanl.netlify.app/): Discover a sample Amazon product page design.
 - [Web Agency Hero](https://web-agency-hero-evanl.netlify.app/): Get inspired by a sleek and modern web page layout for a web agency.
 - [Basketball Scoreboard](https://basketball-scoreboard-evanl.netlify.app): See a basketball scoreboard in action!
 - [Unit Converter](https://unit-converter-evanl.netlify.app/): Convert units!
+
+### React Exercises
+
+- 
