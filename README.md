@@ -17,7 +17,7 @@ Welcome to my web development portfolio! This repository showcases my progress i
 
 ### React Projects
 
-- 
+- [Digital Business Card](https://digital-business-card-evanl.netlify.app/) (in progress)
 
 ## Exercises
 
