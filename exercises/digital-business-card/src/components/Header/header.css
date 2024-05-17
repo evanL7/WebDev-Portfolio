@@ -1,0 +1,24 @@
+.header {
+    
+}
+
+#img-evan {
+    width: 317px;
+}
+
+h1 {
+    color: white;
+    font-size: 25px;
+}
+
+h3 {
+    color: #F3BF99;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#contact-btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
