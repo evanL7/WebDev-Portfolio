@@ -1,34 +1,73 @@
-.header {
-    
+#img-evan {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 317px;
 }
 
-#img-evan {
-    width: 317px;
+h1, h3, h6 {
+    margin: 0;
+    text-align: center;
 }
 
 h1 {
     color: white;
     font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 2px;
 }
 
 h3 {
     color: #F3BF99;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 9px;
+}
+
+h6 > a {
+    color: #F5F5F5;
+    font-size: 10px;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 #contact-btns {
+    font-size: 13px;
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
+    line-height: 16px;
+}
+
+#contact-btns > a {
+    text-decoration: none;
 }
 
 #email-el {
     background-color: white;
-    color: #374151;
+    border-radius: 6px;
+    color: #374151;    
+    padding: 7px 30px;
+    text-wrap: nowrap;
+    width: 55px;
+}
+
+#mail-img {
+    margin-right: 6px;
+    text-wrap: nowrap;
+    transform: translateY(2px)
 }
 
 #linkedin-el {
     background-color: #5093E2;
+    border-radius: 6px;
     color: white;
+    padding: 7px 30px;
+    text-wrap: nowrap;
+    width: 55px;
+}
+
+#linkedin-img {
+    text-wrap: nowrap;
+    transform: translate(-4px, 1px);
 }

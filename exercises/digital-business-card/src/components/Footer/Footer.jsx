@@ -1,12 +1,38 @@
 import './Footer.css'
 
-export default function Footer() {
+function Footer() {
+    const links = [
+        {
+            href: 'https://twitter.com/scrimba',
+            imgSrc: './src/assets/icon-x.svg',
+            alt: 'Twitter logo'
+        },
+        {
+            href: 'https://www.facebook.com/scrimba/',
+            imgSrc: './src/assets/icon-facebook.svg',
+            alt: 'Facebook logo'
+        },
+        {
+            href: 'https://www.instagram.com/',
+            imgSrc: './src/assets/icon-instagram.svg',
+            alt: 'Instagram logo'
+        },
+        {
+            href: 'https://github.com/evanL7',
+            imgSrc: './src/assets/icon-github.svg',
+            alt: 'GitHub logo'
+        }
+    ]
+
     return (
         <footer>
-            <a href='https://twitter.com/scrimba'><img src='./src/assets/Twitter.png' alt='Twitter logo' /></a>
-            <a href='https://www.facebook.com/scrimba/'><img src='./src/assets/Facebook.png' alt='Facebook logo' /></a>
-            <a href='https://www.instagram.com/'><img src='./src/assets/Instagram.png' alt='Instagram logo' /></a>
-            <a href='https://github.com/evanL7'><img src='./src/assets/GitHub.png' alt='GitHub logo' /></a>
+            {links.map((link, index) => (
+                <a key={index} href={link.href} target='_blank'>
+                    <img src={link.imgSrc} alt={link.alt} />
+                </a>
+            ))}
         </footer>
     )
 }
+
+export default Footer

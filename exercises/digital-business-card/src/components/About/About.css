@@ -1,8 +1,16 @@
+#about-el {
+    padding: 30px 35px 0;
+}
+
 h2 {
     color: #F5F5F5;
-
+    font-size: 16px;
+    margin: 0;
 }
 
 p {
-    color: DCDCDC
+    color: #DCDCDC;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 6px 0;
 }
