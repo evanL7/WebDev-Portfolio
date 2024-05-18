@@ -22,3 +22,13 @@ h3 {
     justify-content: space-evenly;
     margin-top: 20px;
 }
+
+#email-el {
+    background-color: white;
+    color: #374151;
+}
+
+#linkedin-el {
+    background-color: #5093E2;
+    color: white;
+}

@@ -1,4 +1,4 @@
-import './header.css'
+import './Header.css'
 
 export default function Header() {
     return (
@@ -7,8 +7,8 @@ export default function Header() {
             <h1>Evan Law</h1>
             <h3>Student</h3>
             <div id='contact-btns'>
-                <div>Email</div>
-                <div>LinkedIn</div>
+                <div id='email-el'>Email</div>
+                <div id='linkedin-el'>LinkedIn</div>
             </div>
         </header>
     )
