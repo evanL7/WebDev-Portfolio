@@ -3,17 +3,17 @@ import './Footer.css'
 function Footer() {
     const links = [
         {
-            href: 'https://twitter.com/scrimba',
+            href: 'https://x.com',
             imgSrc: './src/assets/icon-x.svg',
             alt: 'Twitter logo'
         },
         {
-            href: 'https://www.facebook.com/scrimba/',
+            href: 'https://www.facebook.com',
             imgSrc: './src/assets/icon-facebook.svg',
             alt: 'Facebook logo'
         },
         {
-            href: 'https://www.instagram.com/',
+            href: 'https://www.instagram.com',
             imgSrc: './src/assets/icon-instagram.svg',
             alt: 'Instagram logo'
         },
