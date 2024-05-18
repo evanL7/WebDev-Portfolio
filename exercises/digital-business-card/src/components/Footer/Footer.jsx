@@ -1,25 +1,29 @@
 import './Footer.css'
+import xLogo from '../../assets/icon-x.svg'
+import facebookLogo from '../../assets/icon-facebook.svg'
+import instagramLogo from '../../assets/icon-instagram.svg'
+import githubLogo from '../../assets/icon-github.svg'
 
 function Footer() {
     const links = [
         {
             href: 'https://x.com',
-            imgSrc: './src/assets/icon-x.svg',
+            imgSrc: xLogo,
             alt: 'Twitter logo'
         },
         {
             href: 'https://www.facebook.com',
-            imgSrc: './src/assets/icon-facebook.svg',
+            imgSrc: facebookLogo,
             alt: 'Facebook logo'
         },
         {
             href: 'https://www.instagram.com',
-            imgSrc: './src/assets/icon-instagram.svg',
+            imgSrc: instagramLogo,
             alt: 'Instagram logo'
         },
         {
             href: 'https://github.com/evanL7',
-            imgSrc: './src/assets/icon-github.svg',
+            imgSrc: githubLogo,
             alt: 'GitHub logo'
         }
     ]
