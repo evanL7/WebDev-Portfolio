@@ -1,5 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
+import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase'
+import { OpenAIEmbeddings } from '@langchain/openai';
 import fs from 'fs/promises';
 import dotenv from 'dotenv';
 
@@ -19,18 +21,22 @@ const filePath = './scrimba-info.txt';
         });
 
         const output = await splitter.createDocuments([text]);
-        console.log(output[0])
-
-        // Access and log each line of the pageContent
-        // const document = output[0];
-        // const lines = document.pageContent.split('\n');
-        // lines.forEach((line, index) => {
-        //     console.log(`Line ${index + 1}: ${line}`);
-        // });
 
         const sbApiKey = process.env.SUPABASE_API_KEY;
         const sbUrl = process.env.SUPABASE_URL_LC_CHATBOT;
         const openAIApiKey = process.env.OPENAI_API_KEY;
+
+        const client = createClient(sbUrl, sbApiKey)
+
+        await SupabaseVectorStore.fromDocuments(
+            output,
+            new OpenAIEmbeddings({ openAIApiKey }),
+            {
+                client,
+                tableName: 'documents',
+            }
+        )
+        console.log("success")
 
     } catch (err) {
         console.log(err);
