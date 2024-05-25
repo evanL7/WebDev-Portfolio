@@ -1,10 +1,6 @@
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase'
 import { OpenAIEmbeddings } from '@langchain/openai';
 import { createClient } from '@supabase/supabase-js';
-// import dotenv from 'dotenv';
-
-// Load environment variables from .env file
-// dotenv.config();
 
 const openAIApiKey = import.meta.env.VITE_OPENAI_API_KEY
 

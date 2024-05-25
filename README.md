@@ -14,6 +14,7 @@ Welcome to my web development portfolio! This repository showcases my progress i
 - [Password Generator](https://password-generator-evanl.netlify.app/): Explore a convenient password generator tool to create strong and unique passwords for your online accounts.
 - [Add to Cart](https://add-to-cart-evanl.netlify.app/): Keep a shopping list on hand and easily add items to your cart!
 - [We Are the Champions](https://we-are-the-champions-evanl.netlify.app/): Share your endorsements and celebrate your achievements with the world!
+- [Scrimba Bot](https://scrimba-bot.netlify.app/): An AI chatbot designed to assist users on Scrimba, providing helpful information and answering questions. Please note that using the Scrimba Bot requires an OpenAI key and a Supabase account.
 
 ### React Projects
 
