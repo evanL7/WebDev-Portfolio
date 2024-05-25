@@ -1,19 +1,20 @@
-import { createClient } from '@supabase/supabase-js';
+import { ChatOpenAI } from '@langchain/openai';
+import { PromptTemplate } from '@langchain/core/prompts'
+import { StringOutputParser } from '@langchain/core/output_parsers'
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
-import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase'
-import { OpenAIEmbeddings } from '@langchain/openai';
+import { RunnablePassthrough, RunnableSequence } from '@langchain/core/runnables';
+
 import fs from 'fs/promises';
-import dotenv from 'dotenv';
 
-// Load environment variables from .env file
-dotenv.config();
+import { retriever } from './utils/retriever.js'
+import { combineDocuments } from './utils/combineDocuments.js'
 
-document.addEventListener('submit', (e) => {
-    e.preventDefault()
-    progressConversation()
-}) 
+// document.addEventListener('submit', (e) => {
+//     e.preventDefault()
+//     progressConversation()
+// }) 
 
-const openAIApiKey = process.env.OPENAI_API_KEY
+const openAIApiKey = import.meta.env.VITE_OPENAI_API_KEY
 const llm = new ChatOpenAI({ openAIApiKey })
 
 const standaloneQuestionTemplate = 'Given a question, convert it to a standalone question. question: {question} standalone question:'
@@ -25,13 +26,35 @@ question: {question}
 answer: `
 const answerPrompt = PromptTemplate.fromTemplate(answerTemplate)
 
-const chain = standaloneQuestionPrompt.pipe(llm).pipe(new StringOutputParser()).pipe(retriever).pipe(combineDocuments).pipe(answerPrompt)
+const standaloneQuestionChain = RunnableSequence.from([
+    standaloneQuestionPrompt,
+    llm,
+    new StringOutputParser(),
+])
 
-const response = await chain.invoke({
-    question: 'What are the technical requirements for running Scrimba? I only have a very old laptop which is not that powerful.'
-})
+const retrieverChain = RunnableSequence.from([
+    prevResult => prevResult.standalone_question,
+    retriever,
+    combineDocuments
+])
 
-console.log(response)
+const answerChain = RunnableSequence.from([
+    answerPrompt,
+    llm,
+    new StringOutputParser()
+])
+
+const chain = RunnableSequence.from([
+    {
+        standalone_question: standaloneQuestionChain,
+        original_input: new RunnablePassthrough() // User input
+    },
+    {
+        context: retrieverChain,
+        question: ({ original_input }) => original_input.question
+    },
+    answerChain
+])
 
 async function progressConversation() {
     const userInput = document.getElementById('user-input')
@@ -46,10 +69,15 @@ async function progressConversation() {
     newHumanSpeechBubble.textContent = question
     chatbotConversation.scrollTop = chatbotConversation.scrollHeight
 
+    const response = await chain.invoke({
+        question: question
+    })
+    console.log(response)
+
     // add AI message
     const newAiSpeechBubble = document.createElement('div')
     newAiSpeechBubble.classList.add('speech', 'speech-ai')
     chatbotConversation.appendChild(newAiSpeechBubble)
-    newAiSpeechBubble.textContent = result
+    newAiSpeechBubble.textContent = response
     chatbotConversation.scrollTop = chatbotConversation.scrollHeight
 }
