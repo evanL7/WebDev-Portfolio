@@ -33,4 +33,4 @@ Welcome to my web development portfolio! This repository showcases my progress i
 ### React Exercises
 
 - [Digital Business Card](https://digital-business-card-evanl.netlify.app/): Explore an enhanced and interactive version of my professional business card!
-- [Airbnb](https://airbnb-experiences-clone-evanl.netlify.app/): A clone of the Airbnb experiences page!
+- [Travel Journal](hhttps://travel-journal-evanl.netlify.app/): See a collection of places to travel!

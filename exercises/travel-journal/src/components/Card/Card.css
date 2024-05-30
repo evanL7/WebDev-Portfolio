@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 550px;
+}
+
+.card--img {
+    background-position: center center;
+    border-radius: 10px;
+    height: 210px;
+    width: 158px;
+    object-fit: cover;
+}
+
+.card--content {
+    padding-left: 20px;
+}
+
+.card--location {
+    display: flex;
+    font-weight: 200;
+}
+
+.card--location--text {
+    font-weight: 400;
+    margin: 0;
+    padding-left: 3px;
+}
+
+.country--name {
+    color: #2B283A;
+    font-size: 14px;
+    font-weight: 100px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a {
+    color: #918E9B;
+    font-size: 13px;
+    padding-left: 12px;
+}
+
+.card--title {
+    font-size: 25px;
+    margin: 4px 0 10px;
+}
+
+.card--date {
+    margin: 0 0 4px;
+    font-weight: 600;
+}
+
+.card--desc {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 10px 0 0 0;
+}
