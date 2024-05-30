@@ -1,12 +1,13 @@
 import Card from '../components/Card/Card';
-import data from '../data.jsx';
+import data from '../data';
 
 const cardElements = data.map((card, index) => {
     return (
         <>
             <Card 
                 key={index}
-                {...card}
+                cardItem = {card}
+                // {...card}
             />
             <hr />
         </>
