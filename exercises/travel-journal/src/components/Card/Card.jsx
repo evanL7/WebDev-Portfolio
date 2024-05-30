@@ -10,7 +10,7 @@ function Card(props) {
                     <img src={locationSymbol} alt="location symbol" />
                     <h4 className='card--location--text'>
                         <span className='country--name'>{props.location}</span>
-                        <a href={props.googleMapsUrl}>View on Google Maps</a>
+                        <a href={props.googleMapsUrl} target='_blank'>View on Google Maps</a>
                     </h4>
                 </div>
                 <h2 className='card--title'>{props.title}</h2>
