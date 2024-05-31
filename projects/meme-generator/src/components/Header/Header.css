@@ -1,0 +1,29 @@
+header {
+    color: #f5f5f5;
+    font-family: Karla, sans-serif;
+    padding: 1.25rem 1.875rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #672280, #A626D3);
+}
+
+.header--title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.header--title--img {
+    width: 2.5rem;
+}
+
+.header--title-text {
+    font-size: 1.3125rem;
+    padding-left: 0.625rem;
+}
+
+.header--name {
+    font-size: 1rem;
+}
