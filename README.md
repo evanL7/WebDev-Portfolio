@@ -34,3 +34,4 @@ Welcome to my web development portfolio! This repository showcases my progress i
 
 - [Digital Business Card](https://digital-business-card-evanl.netlify.app/): Explore an enhanced and interactive version of my professional business card!
 - [Travel Journal](https://travel-journal-evanl.netlify.app/): See a collection of places to travel!
+- [Notes App](https://notes-app-evanl.netlify.app): Organize your thoughts and keep track of your ideas with a digital notepad akin to Apple's Notes app!
