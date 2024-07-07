@@ -1,0 +1,20 @@
+.die {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px lightgray;
+    color: #2B283A;
+    cursor: pointer;
+    font-family: Karla, sans-serif;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+.die--held {
+    background-color: #59E391;
+}
