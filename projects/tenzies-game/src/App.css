@@ -43,6 +43,28 @@ main {
     gap: 20px;
 }
 
+.section--scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h5--counter {
+    color: #2B283A;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.h6--high-score {
+    color: #2B283A;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
 .button--roll {
     background-color: #5035FF;
     border: none;

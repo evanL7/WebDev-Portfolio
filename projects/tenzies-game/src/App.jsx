@@ -6,7 +6,13 @@ import './App.css'
 
 function App() {
     const [dieArray, setDieArray] = useState(allNewDice)
+    const [rolls, setRolls] = useState(0)
+    const [highScore, setHighScore] = useState(0)
     const [tenzies, setTenzies] = useState(false)
+
+    useEffect(() => {
+        setHighScore(localStorage.getItem('rolls') || 0)
+    })
 
     useEffect(() => {
         const allHeld = dieArray.every(die => die.isHeld)
@@ -19,11 +25,17 @@ function App() {
     
     function handleRoll() {
         if (tenzies) {
+            if (rolls < highScore) {
+                setHighScore(rolls)
+            }
+            localStorage.setItem('rolls', rolls)
+            setRolls(0)
             setDieArray(allNewDice())
             setTenzies(false)
             return
         }
 
+        setRolls(prevRolls => prevRolls + 1)
         setDieArray(prevArray =>
             prevArray.map(die => 
                 die.isHeld
@@ -77,6 +89,10 @@ function App() {
                         />
                     ))}
                 </div>
+                <section className='section--scores'>
+                    <h5 className='h5--counter'>Rolls: {rolls}</h5>
+                    <h6 className='h6--high-score'>Fewest Rolls: {highScore}</h6>
+                </section>
                 <button onClick={handleRoll} className='button--roll'>{tenzies ? 'New Game' : 'Roll'}</button>
             </main>
         </>
