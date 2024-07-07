@@ -27,8 +27,8 @@ function App() {
         if (tenzies) {
             if (rolls < highScore) {
                 setHighScore(rolls)
+                localStorage.setItem('rolls', rolls)
             }
-            localStorage.setItem('rolls', rolls)
             setRolls(0)
             setDieArray(allNewDice())
             setTenzies(false)
