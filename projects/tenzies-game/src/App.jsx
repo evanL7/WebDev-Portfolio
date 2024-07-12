@@ -11,8 +11,10 @@ function App() {
     const [tenzies, setTenzies] = useState(false)
 
     useEffect(() => {
-        setHighScore(localStorage.getItem('rolls') || 0)
-    })
+        const storedHighScore = localStorage.getItem('rolls')
+        const parsedHighScore = parseInt(storedHighScore, 10)
+        setHighScore(parsedHighScore || 0)
+    }, [])
 
     useEffect(() => {
         const allHeld = dieArray.every(die => die.isHeld)
@@ -25,7 +27,7 @@ function App() {
     
     function handleRoll() {
         if (tenzies) {
-            if (rolls < highScore) {
+            if (rolls < highScore || highScore === 0) {
                 setHighScore(rolls)
                 localStorage.setItem('rolls', rolls)
             }
