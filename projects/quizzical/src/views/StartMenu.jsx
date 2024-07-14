@@ -12,12 +12,10 @@ const StartMenuContainer = styled.div`
     font-weight: bold;
     margin: 0;
 `
-
 const Title = styled.h1`
     font-size: 2rem;
     margin: 0 0 1rem 0;
 `
-
 const Description = styled.p`
     color: #293264;
     font-size: 1rem;
