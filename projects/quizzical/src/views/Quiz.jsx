@@ -64,7 +64,9 @@ export function Quiz({ questions, }) {
                         ))}
                         <StyledButton
                             onClick={() => {
-                                setShowAnswers(true)
+                                if (questions.length === JSON?.parse(localStorage.getItem('answers')).length) {
+                                    return setShowAnswers(true)
+                                }
                             }}
                         >
                             Check Answers
