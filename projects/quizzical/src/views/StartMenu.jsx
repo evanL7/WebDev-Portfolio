@@ -20,7 +20,7 @@ const Description = styled.p`
     color: #293264;
     font-size: 1rem;
     font-weight: normal;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.5rem 0;
 `
 const StyledButton = styled.button`
     background-color: #4D5B9E;
@@ -39,7 +39,6 @@ const StyledButton = styled.button`
 `
 
 export function StartMenu({ switchViewCallback }) {
-
     return (
         <StartMenuContainer>
             <Title>Quizzical</Title>

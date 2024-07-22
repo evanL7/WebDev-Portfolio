@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { nanoid } from 'nanoid'
 import Question from '../components/Question'
+import { QuizAnswers } from './QuizAnswers'
 
 const StyledQuizContainer = styled.div`
     display: flex;
@@ -28,16 +29,53 @@ const StyledButton = styled.button`
     }
 `
 
-export function Quiz({ questions }) {
+export function Quiz({ questions, }) {
+    const [showAnswers, setShowAnswers] = useState(false)
+
+    const questionCallback = resp => {
+        if (localStorage.getItem('answers')) {
+            const answers = JSON.parse(localStorage.getItem('answers'))
+
+            const index = answers.findIndex(answer => answer.id === resp.id)
+            if (index !== -1) {
+                answers[index] = resp
+            } else {
+                answers.push(resp)
+            }
+
+            localStorage.setItem('answers', JSON.stringify(answers))
+        } else {
+            localStorage.setItem('answers', JSON.stringify([resp]))
+        }
+    }
 
     return (
         <>
             <StyledQuizContainer>
-                {questions.map((question, i) => (
-                    <Question key={nanoid()} question={question} />
-                
-                ))}
-                <StyledButton>Check Answers</StyledButton>
+                {!showAnswers
+                    ?
+                    <>
+                        {questions.map((question, i) => (
+                            <Question
+                                key={nanoid()}
+                                question={question}
+                                questionCallback={questionCallback}
+                            />
+                        ))}
+                        <StyledButton
+                            onClick={() => {
+                                setShowAnswers(true)
+                            }}
+                        >
+                            Check Answers
+                        </StyledButton>
+                        
+                    </>
+                    :   
+                    <>
+                        <QuizAnswers questions={questions} />
+                    </>
+                }
             </StyledQuizContainer>
         </>
     )
